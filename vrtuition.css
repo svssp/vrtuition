@@ -1,0 +1,55 @@
+#home-navbar
+{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}
+
+#home-navbar p
+{
+    display: inline-block;
+    padding: 4px 20px;
+    font-size: 140%;
+}
+
+#home-navbar p:hover
+{
+    cursor: pointer;
+    font-size: 145%;
+}
+
+.navbar{
+    background-color: cadetblue;   
+}
+
+.navbar-default .navbar-nav>li>a{
+    color: cornsilk;
+}
+.navbar-right
+{
+    margin-right: 2%;
+    font-size: 130%;
+}
+
+#dis
+{
+    display: none;
+    z-index:9999;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+@media only screen and (max-width:767px)
+{
+    #head
+    {
+        font-size: larger;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a
+    {
+        color: honeydew;
+    }
+}
