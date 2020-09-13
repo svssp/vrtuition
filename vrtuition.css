@@ -19,11 +19,11 @@
 }
 
 .navbar{
-    background-color: cadetblue;   
+    background-color: slategrey;   
 }
 
 .navbar-default .navbar-nav>li>a{
-    color: cornsilk;
+    color:honeydew;
 }
 .navbar-right
 {
