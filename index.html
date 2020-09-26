@@ -10,43 +10,205 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Exo:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
         <link  href="vrtuition.css" rel="stylesheet">
+        <style>
+            body{
+                background-color:#47a0af;
+            }
+            .container
+            {
+                color: white;
+            }
+            .pageintro
+            {
+                background-image: url('imgs/svrtuition12.jpg');
+                background-size:100%;
+                
+            }
+            .pageintro h1{
+                line-height: 400px;
+                font-size: 300% ;
+                margin-top: 0px;    
+                margin-bottom: 0;
+            }
+            .intro-desc
+            {
+                background-color:#005a87;
+                color: white;
+                
+            }
+            .intro-desc p
+            {
+                padding-left: 14%;
+                padding-right: 14%;
+                font-size: 300%;
+                font-family: 'Crimson Text', serif;
+                font-weight: 500;
+            }
+            .container .row div p
+            {
+                font-size: 130%;
+                letter-spacing: 1px;
+                word-spacing: 3px;
+                font-weight: 100;
+                font-family: 'Roboto Slab', serif;
+            }
+            .container .row{
+                margin-bottom: 80px;
+            }
+            
+
+                #Navbar .nav li a
+                {
+                    color: black;
+                }
+
+            @media only screen and (max-width: 768px) {
+                .pageintro
+                {
+                    background-repeat: no-repeat;
+                }
+                .pageintro h1
+                {
+                    line-height: 200px;
+                    font-size: 170%;
+                }
+                .intro-desc p
+                {
+                    font-size: 130%;
+                }
+                .container .row{
+                margin-bottom: 0px;
+                }
+                #img1
+                {
+                    margin-top: 30px;
+                }
+                .mobilenav
+                {
+                   position: absolute;
+                   right: 15px;
+                }
+                .mobilenav span
+                {
+                    
+                }
+                #togglebutton
+                {
+                    display: none;
+                }
+            }
+            @media only screen and (min-width: 768px)
+            {
+                .navbar-nav.navbar-center {
+                position: absolute;
+                left: 50%;
+                transform: translatex(-50%);
+                }
+                .mobilenav
+                {
+                    display: none;
+                }
+                
+            }
+            
+        </style>
 
     </head>
     <body>
+        <nav class="navbar navbar-default" style="margin-bottom:0;background-color: white">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Navbar" id="togglebutton">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                  </button>
+                <p class="navbar-brand" href="#" style=" color: rgb(14, 13, 13)">VR Maths Academy 
+                    <span class="mobilenav">
+                        <a href="tel:+919618892535">
+                            <span class="glyphicon glyphicon-earphone"></span>
+                        </a> 
+                        <a href="mailto:svrsarma1976@gmail.com" style="margin-left: 15px;">
+                            <span class="glyphicon glyphicon-envelope"></span>
+                        </a>
+                    </span>
+                </p>
+              </div>
+              <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="nav navbar-nav navbar-right" id="contact">
+                    <li><a href="tel:+919618892535" style="color:blue;font-weight:bold"><span class="glyphicon glyphicon-earphone"></span> 96188 92535</a></li>
+                    <li><a href="mailto:svrsarma1976@gmail.com" style="color:blue;font-weight:bold"><span class="glyphicon glyphicon-envelope"></span> svrsarma1976@gmail.com</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+        
 
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default" style="margin-bottom:0;background-color: #0D326E;">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>                        
                   </button>
-                <a class="navbar-brand" href="#" style=" color: rgba(233, 227, 227, 0.972);">Montessori High School</a>
+                
               </div>
               <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+            <ul class="nav navbar-nav navbar-center" id="lapnav">
+                <li><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
                 <li><a href="class.html"><span class="glyphicon glyphicon-book"></span> Class</a></li>
-                <li><a href="#contact"><span class="glyphicon glyphicon-earphone"></span> Contact</a></li>
+                
             </ul>
             </div>
         </nav>
 
+        <div class="pageintro">
+            <div>
+                <h1 class="text-center page-head" style="font-family: 'Roboto Slab', serif;color: white;">VR Maths Academy</h1>
+            </div> 
+        </div>
+        <div class=" jumbotron intro-desc text-center">
+            <p>With more than 20 years of experience, we can provide in-depth knowledge in mathematical concepts related to State, CBSE and ICSC syllabus</p>
+        </div>
+
         <div class="container">
-            <h1 class="text-center" id="head" style="font-family: 'Roboto Slab', serif;">VR Maths Academy</h1>
             <div class="row">
-                <div class="col-md-4">
-                    <img src="imgs/svrtuition1.jpg" class="img-rounded" style="width:100%;">
-                    <img src="imgs/svrtuition2.jpg" class="img-rounded" style="width:100%;display: none;">
-                    <img src="imgs/svrtuition3.jpg" class="img-rounded" style="width:100%;display: none;">
+                <div class="col-md-7">
+                    <h2>What is so special about VR Tuition Center?</h2>
+                      <p>Maths Library (includes various books for various competitions like NTSE,IIT coaching, APRJC, Entrance examinations for different colleges etc),Group discussions, personal care on each student, Motivation to improve values</p>
                 </div>
-                <div class="col-md-8">
-                    <p>this is sv ramana's tuition center. meeku nachithene join avvandi meeku nachakapoina join avvandi</p>
+                <div class="col-md-5" id="img1">
+                    <img src="imgs/svrtuition2.jpg" class="img-rounded" style="width:100%;">
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="imgs/svrtuition1.jpg" class="img-rounded" style="width:100%;">
+                </div>
+                <div class="col-md-7" style="color: white;">
+                    <h2>Students Perfomance Checking and Imporvement</h2>
+                      <p>we conduct weekly exams, debating and various quiz competitions to check how student is performing so that we will take special care about students based on the results</p>
+                </div>
+            </div>
+            <br>
+            <br>
+            
+            <div class="row">
+                <div class="col-md-7">
+                    <blockquote>
+                        <p>"Inspiration is the impact of a fact on a well-prepared mind"</p>
+                        <footer style="color:white">Louis Pasteur</footer>
+                      </blockquote>
+                      <p></p>
+                </div>
+                <div class="col-md-5">
+                    <img src="imgs/svrtuition1234.jpg" class="img-rounded" style="width:100%;">
                 </div>
             </div>
         </div>
-        
-        <script src="vrtuition.js"></script>
     </body>
 </html>
